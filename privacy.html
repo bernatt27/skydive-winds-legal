@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Política de Privacidad — Skydiving Winds</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; color: #1a1a2e; background: #f8f9fa; line-height: 1.7; }
+    .container { max-width: 720px; margin: 0 auto; padding: 48px 24px; }
+    header { text-align: center; margin-bottom: 48px; }
+    .logo { font-size: 48px; margin-bottom: 12px; }
+    h1 { font-size: 28px; font-weight: 800; color: #0066ff; margin-bottom: 8px; }
+    .updated { color: #888; font-size: 14px; }
+    section { background: white; border-radius: 16px; padding: 28px; margin-bottom: 20px; border: 1px solid #e8eaf0; }
+    h2 { font-size: 17px; font-weight: 700; color: #0066ff; margin-bottom: 14px; display: flex; align-items: center; gap: 8px; }
+    p { color: #444; margin-bottom: 12px; font-size: 15px; }
+    ul { padding-left: 20px; margin-bottom: 12px; }
+    li { color: #444; margin-bottom: 6px; font-size: 15px; }
+    a { color: #0066ff; text-decoration: none; }
+    .highlight { background: #f0f5ff; border-left: 4px solid #0066ff; padding: 14px 18px; border-radius: 8px; margin: 16px 0; }
+    footer { text-align: center; color: #888; font-size: 13px; margin-top: 40px; }
+  </style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <div class="logo">🪂</div>
+    <h1>Política de Privacidad</h1>
+    <p class="updated">Última actualización: marzo de 2026</p>
+  </header>
+
+  <section>
+    <h2>📋 Quién somos</h2>
+    <p>Skydiving Winds es una aplicación móvil diseñada para paracaidistas que proporciona datos meteorológicos para ayudar en la toma de decisiones de salto. Esta política describe qué datos recogemos, cómo los usamos y cómo los protegemos.</p>
+    <p>Email de contacto: <a href="mailto:support@skydivingwinds.app">support@skydivingwinds.app</a></p>
+  </section>
+
+  <section>
+    <h2>📍 Datos de ubicación</h2>
+    <p>La app puede solicitar acceso a tu ubicación GPS <strong>únicamente cuando la app está en uso</strong> y solo si tú lo activas. La ubicación se usa exclusivamente para:</p>
+    <ul>
+      <li>Cargar datos meteorológicos del viento de tu zona actual</li>
+      <li>Mostrar dropzones cercanas a tu posición</li>
+    </ul>
+    <div class="highlight">
+      <strong>Nunca almacenamos tu ubicación GPS en nuestros servidores.</strong> Las coordenadas se usan en tiempo real para consultar la API meteorológica (Open-Meteo) y se descartan inmediatamente.
+    </div>
+  </section>
+
+  <section>
+    <h2>🪂 Historial de saltos</h2>
+    <p>Si creas una cuenta, puedes registrar voluntariamente tu historial de saltos. Estos datos incluyen:</p>
+    <ul>
+      <li>Fecha y dropzone del salto</li>
+      <li>Altitudes de salida y apertura</li>
+      <li>Tipo de salto y equipo utilizado</li>
+      <li>Notas personales e incidencias</li>
+      <li>Condiciones meteorológicas en el momento del registro (opcional)</li>
+    </ul>
+    <p>Estos datos se almacenan de forma segura en nuestros servidores (Supabase, alojado en la UE) y son accesibles solo por ti. Puedes eliminarlos en cualquier momento desde la app.</p>
+  </section>
+
+  <section>
+    <h2>👤 Datos de cuenta</h2>
+    <p>Si te registras, almacenamos:</p>
+    <ul>
+      <li>Email y contraseña cifrada (gestionada por Supabase Auth)</li>
+      <li>Nombre de usuario (opcional)</li>
+      <li>Preferencias: altitudes, límites de viento, unidades, disciplinas</li>
+      <li>Equipo registrado (opcional)</li>
+      <li>Dropzones favoritas y Home DZ</li>
+    </ul>
+    <p>Puedes usar la app sin cuenta, en cuyo caso nada se almacena en nuestros servidores.</p>
+  </section>
+
+  <section>
+    <h2>🌐 APIs de terceros</h2>
+    <p>La app utiliza los siguientes servicios externos:</p>
+    <ul>
+      <li><strong>Open-Meteo</strong> (open-meteo.com) — datos meteorológicos. Recibe coordenadas GPS para devolver datos del viento. Es una API pública y gratuita sin registro.</li>
+      <li><strong>Supabase</strong> (supabase.com) — base de datos y autenticación, alojada en la UE. Cumple GDPR.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>🍪 Almacenamiento local</h2>
+    <p>La app almacena en tu dispositivo (AsyncStorage) las preferencias de usuario y datos de sesión para mejorar la experiencia. No usamos cookies de seguimiento ni publicidad de ningún tipo.</p>
+  </section>
+
+  <section>
+    <h2>✉️ Comunicaciones</h2>
+    <p>No enviamos correos de marketing. Los únicos emails que puedes recibir son:</p>
+    <ul>
+      <li>Verificación de email al registrarte</li>
+      <li>Enlace para restablecer contraseña (solo si lo solicitas)</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>🗑️ Tus derechos (GDPR)</h2>
+    <p>Tienes derecho a:</p>
+    <ul>
+      <li><strong>Acceder</strong> a todos tus datos desde la app</li>
+      <li><strong>Rectificar</strong> datos incorrectos desde tu perfil</li>
+      <li><strong>Eliminar</strong> tu cuenta y todos tus datos desde Perfil → Eliminar cuenta</li>
+      <li><strong>Portabilidad</strong>: contacta con nosotros para exportar tus datos</li>
+    </ul>
+    <p>Para ejercer cualquier derecho: <a href="mailto:support@skydivingwinds.app">support@skydivingwinds.app</a></p>
+  </section>
+
+  <section>
+    <h2>⚖️ Responsabilidad</h2>
+    <p>Skydiving Winds es una herramienta de <strong>apoyo informativo</strong>. Los datos meteorológicos mostrados provienen de modelos numéricos y no sustituyen en ningún caso el criterio del piloto, el instructor o el manifestador. Las decisiones de salto son responsabilidad exclusiva del usuario.</p>
+  </section>
+
+  <footer>
+    <p>© 2026 Skydiving Winds · <a href="terms.html">Términos de Uso</a> · <a href="mailto:support@skydivingwinds.app">Contacto</a></p>
+  </footer>
+</div>
+</body>
+</html>
