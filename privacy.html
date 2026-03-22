@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Política de Privacidad — Skydiving Winds</title>
+  <title>Privacy Policy — Skydiving Winds</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; color: #1a1a2e; background: #f8f9fa; line-height: 1.7; }
@@ -18,6 +18,7 @@
     ul { padding-left: 20px; margin-bottom: 12px; }
     li { color: #444; margin-bottom: 6px; font-size: 15px; }
     a { color: #0066ff; text-decoration: none; }
+    a:hover { text-decoration: underline; }
     .highlight { background: #f0f5ff; border-left: 4px solid #0066ff; padding: 14px 18px; border-radius: 8px; margin: 16px 0; }
     footer { text-align: center; color: #888; font-size: 13px; margin-top: 40px; }
   </style>
@@ -26,96 +27,117 @@
 <div class="container">
   <header>
     <div class="logo">🪂</div>
-    <h1>Política de Privacidad</h1>
-    <p class="updated">Última actualización: marzo de 2026</p>
+    <h1>Privacy Policy</h1>
+    <p class="updated">Last updated: March 2026</p>
   </header>
 
   <section>
-    <h2>📋 Quién somos</h2>
-    <p>Skydiving Winds es una aplicación móvil diseñada para paracaidistas que proporciona datos meteorológicos para ayudar en la toma de decisiones de salto. Esta política describe qué datos recogemos, cómo los usamos y cómo los protegemos.</p>
-    <p>Email de contacto: <a href="mailto:skydivewindssupport@gmail.com">skydivewindssupport@gmail.com</a></p>
+    <h2>📋 Who we are</h2>
+    <p>Skydiving Winds is a mobile application designed for skydivers, providing weather information and support tools for jump planning and post-jump review. This policy explains what data we process, why we process it, and how you can manage your information.</p>
+    <p>Contact: <a href="mailto:skydivewindssupport@gmail.com">skydivewindssupport@gmail.com</a></p>
   </section>
 
   <section>
-    <h2>📍 Datos de ubicación</h2>
-    <p>La app puede solicitar acceso a tu ubicación GPS <strong>únicamente cuando la app está en uso</strong> y solo si tú lo activas. La ubicación se usa exclusivamente para:</p>
+    <h2>📍 Location data</h2>
+    <p>The app may request access to your location <strong>only while the app is in use</strong> and only if you allow it. Location is used solely to:</p>
     <ul>
-      <li>Cargar datos meteorológicos del viento de tu zona actual</li>
-      <li>Mostrar dropzones cercanas a tu posición</li>
+      <li>Load nearby wind and weather conditions</li>
+      <li>Show dropzones near your position</li>
     </ul>
     <div class="highlight">
-      <strong>Nunca almacenamos tu ubicación GPS en nuestros servidores.</strong> Las coordenadas se usan en tiempo real para consultar la API meteorológica (Open-Meteo) y se descartan inmediatamente.
+      <strong>We do not store your GPS location on our servers.</strong> Coordinates are used in real time to query weather services and are discarded once the response is received.
     </div>
   </section>
 
   <section>
-    <h2>🪂 Historial de saltos</h2>
-    <p>Si creas una cuenta, puedes registrar voluntariamente tu historial de saltos. Estos datos incluyen:</p>
+    <h2>🪂 Jump log data</h2>
+    <p>If you create an account, you may voluntarily record your jump history. This data may include:</p>
     <ul>
-      <li>Fecha y dropzone del salto</li>
-      <li>Altitudes de salida y apertura</li>
-      <li>Tipo de salto y equipo utilizado</li>
-      <li>Notas personales e incidencias</li>
-      <li>Condiciones meteorológicas en el momento del registro (opcional)</li>
+      <li>Jump date, time, and dropzone</li>
+      <li>Exit and opening altitudes</li>
+      <li>Jump type and equipment used</li>
+      <li>Personal notes and incidents</li>
+      <li>Weather conditions optionally saved with the jump</li>
     </ul>
-    <p>Estos datos se almacenan de forma segura en nuestros servidores (Supabase, alojado en la UE) y son accesibles solo por ti. Puedes eliminarlos en cualquier momento desde la app.</p>
+    <p>This data is stored in our database so that you can access and manage it across your devices. You can delete it at any time from within the app or by contacting support.</p>
   </section>
 
   <section>
-    <h2>👤 Datos de cuenta</h2>
-    <p>Si te registras, almacenamos:</p>
+    <h2>👤 Account data</h2>
+    <p>If you register, we may process the following data:</p>
     <ul>
-      <li>Email y contraseña cifrada (gestionada por Supabase Auth)</li>
-      <li>Nombre de usuario (opcional)</li>
-      <li>Preferencias: altitudes, límites de viento, unidades, disciplinas</li>
-      <li>Equipo registrado (opcional)</li>
-      <li>Dropzones favoritas y Home DZ</li>
+      <li>Login email address</li>
+      <li>Name or alias (if provided)</li>
+      <li>Usage preferences: altitudes, wind limits, units, and disciplines</li>
+      <li>Registered equipment (optional)</li>
+      <li>Favorite dropzones and Home DZ</li>
     </ul>
-    <p>Puedes usar la app sin cuenta, en cuyo caso nada se almacena en nuestros servidores.</p>
+    <p>Authentication and credential management are handled through Supabase Auth. We do not access your password in plain text.</p>
+    <p>You may use parts of the app without an account. In that case, information remains on your device except for the queries required to obtain weather data from external services.</p>
   </section>
 
   <section>
-    <h2>🌐 APIs de terceros</h2>
-    <p>La app utiliza los siguientes servicios externos:</p>
+    <h2>🌐 Third-party services</h2>
+    <p>The app uses external services to operate:</p>
     <ul>
-      <li><strong>Open-Meteo</strong> (open-meteo.com) — datos meteorológicos. Recibe coordenadas GPS para devolver datos del viento. Es una API pública y gratuita sin registro.</li>
-      <li><strong>Supabase</strong> (supabase.com) — base de datos y autenticación, alojada en la UE. Cumple GDPR.</li>
+      <li><strong>Open-Meteo</strong> — weather data provider. It may receive coordinates in order to return wind and forecast data.</li>
+      <li><strong>Supabase</strong> — database and authentication provider. We use this service to manage accounts and store data linked to your profile and jump log.</li>
     </ul>
+    <p>We apply data protection measures and choose suitable providers for processing user information. If you need more detail about providers or data location, you can contact us.</p>
   </section>
 
   <section>
-    <h2>🍪 Almacenamiento local</h2>
-    <p>La app almacena en tu dispositivo (AsyncStorage) las preferencias de usuario y datos de sesión para mejorar la experiencia. No usamos cookies de seguimiento ni publicidad de ningún tipo.</p>
-  </section>
-
-  <section>
-    <h2>✉️ Comunicaciones</h2>
-    <p>No enviamos correos de marketing. Los únicos emails que puedes recibir son:</p>
+    <h2>💾 Local storage on your device</h2>
+    <p>To improve the user experience, the app may locally store certain preferences and temporary data, such as:</p>
     <ul>
-      <li>Verificación de email al registrarte</li>
-      <li>Enlace para restablecer contraseña (solo si lo solicitas)</li>
+      <li>Measurement units and usage preferences</li>
+      <li>Screen cache or recent data</li>
+      <li>Information required to keep you signed in according to the authentication setup available on your platform</li>
     </ul>
+    <p>We do not use advertising cookies or third-party tracking technologies inside the app.</p>
   </section>
 
   <section>
-    <h2>🗑️ Tus derechos (GDPR)</h2>
-    <p>Tienes derecho a:</p>
+    <h2>✉️ Communications</h2>
+    <p>We do not send marketing emails.</p>
+    <p>The only emails you may receive are those required for account operation, for example:</p>
     <ul>
-      <li><strong>Acceder</strong> a todos tus datos desde la app</li>
-      <li><strong>Rectificar</strong> datos incorrectos desde tu perfil</li>
-      <li><strong>Eliminar</strong> tu cuenta y todos tus datos desde Perfil → Eliminar cuenta</li>
-      <li><strong>Portabilidad</strong>: contacta con nosotros para exportar tus datos</li>
+      <li>Email verification when registering</li>
+      <li>Password reset or password change links, if requested</li>
+      <li>Support replies if you contact us</li>
     </ul>
-    <p>Para ejercer cualquier derecho: <a href="mailto:skydivewindssupport@gmail.com">skydivewindssupport@gmail.com</a></p>
   </section>
 
   <section>
-    <h2>⚖️ Responsabilidad</h2>
-    <p>Skydiving Winds es una herramienta de <strong>apoyo informativo</strong>. Los datos meteorológicos mostrados provienen de modelos numéricos y no sustituyen en ningún caso el criterio del piloto, el instructor o el manifestador. Las decisiones de salto son responsabilidad exclusiva del usuario.</p>
+    <h2>🗑️ Your rights and control over your data</h2>
+    <p>You can:</p>
+    <ul>
+      <li>Access your data from within the app</li>
+      <li>Update or correct your profile information</li>
+      <li>Delete your account and related data from the app</li>
+      <li>Request assistance for export or deletion by contacting support</li>
+    </ul>
+    <p>More information:</p>
+    <ul>
+      <li><a href="support-en.html">Support</a></li>
+      <li><a href="delete-account-en.html">Delete account</a></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>⚖️ Informational use and liability</h2>
+    <p>Skydiving Winds is an <strong>informational support tool</strong>. The weather data displayed comes from external services and models and does not replace the judgment of the pilot, instructor, manifest, or dropzone operations staff.</p>
+    <p>The decision to jump or not to jump is always the sole responsibility of the user.</p>
   </section>
 
   <footer>
-    <p>© 2026 Skydiving Winds · <a href="terms.html">Términos de Uso</a> · <a href="mailto:skydivewindssupport@gmail.com">Contacto</a></p>
+    <p>
+      © 2026 Skydiving Winds ·
+      <a href="terms-en.html">Terms of Use</a> ·
+      <a href="support-en.html">Support</a> ·
+      <a href="delete-account-en.html">Delete account</a> ·
+      <a href="mailto:skydivewindssupport@gmail.com">Contact</a>
+    </p>
   </footer>
 </div>
 </body>
