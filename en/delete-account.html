@@ -4,102 +4,42 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Delete account — Skydiving Winds</title>
+  <meta name="description" content="Delete account">
   <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; color: #1a1a2e; background: #f8f9fa; line-height: 1.7; }
-    .container { max-width: 720px; margin: 0 auto; padding: 48px 24px; }
-    header { text-align: center; margin-bottom: 48px; }
-    .logo { font-size: 48px; margin-bottom: 12px; }
-    h1 { font-size: 28px; font-weight: 800; color: #0066ff; margin-bottom: 8px; }
-    .updated { color: #888; font-size: 14px; }
-    section { background: white; border-radius: 16px; padding: 28px; margin-bottom: 20px; border: 1px solid #e8eaf0; }
-    h2 { font-size: 17px; font-weight: 700; color: #0066ff; margin-bottom: 14px; }
-    p { color: #444; margin-bottom: 12px; font-size: 15px; }
-    ul { padding-left: 20px; margin-bottom: 12px; }
-    li { color: #444; margin-bottom: 6px; font-size: 15px; }
-    a { color: #0066ff; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    .warning { background: #fff1f2; border-left: 4px solid #ef4444; padding: 14px 18px; border-radius: 8px; margin: 16px 0; }
-    .highlight { background: #f0f5ff; border-left: 4px solid #0066ff; padding: 14px 18px; border-radius: 8px; margin: 16px 0; }
-    footer { text-align: center; color: #888; font-size: 13px; margin-top: 40px; }
-    code { background: #f3f4f6; padding: 2px 6px; border-radius: 6px; }
+    :root { --accent:#0d6efd; --accent-2:#eaf3ff; --bg:#f6f8fb; --card:#ffffff; --text:#172033; --muted:#586176; --border:#dde5f0; --warn:#fff5da; --warn-border:#f4c542; --danger:#fff1f2; --danger-border:#ef4444; --todo:#fff3cd; --shadow:0 10px 28px rgba(17,24,39,.06); }
+    * { box-sizing:border-box; }
+    body { margin:0; font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; color:var(--text); background:linear-gradient(180deg,#f8fbff 0%, var(--bg) 180px); line-height:1.72; }
+    a { color:var(--accent); text-decoration:none; }
+    a:hover { text-decoration:underline; }
+    .container { max-width:860px; margin:0 auto; padding:28px 18px 60px; }
+    .hero { background:var(--card); border:1px solid var(--border); border-radius:24px; padding:28px; box-shadow:var(--shadow); margin-bottom:18px; }
+    .logo { width:72px; height:72px; display:grid; place-items:center; background:var(--accent-2); border-radius:22px; font-size:36px; margin-bottom:16px; }
+    h1 { margin:0 0 6px; font-size:32px; line-height:1.12; }
+    .sub { color:var(--muted); font-size:14px; }
+    .nav { display:flex; flex-wrap:wrap; gap:10px; margin-top:18px; }
+    .nav-link { display:inline-flex; align-items:center; padding:10px 14px; border-radius:999px; background:#fff; border:1px solid var(--border); color:var(--text); font-weight:600; box-shadow:0 2px 8px rgba(17,24,39,.03); }
+    .section { background:var(--card); border:1px solid var(--border); border-radius:20px; padding:24px; margin-bottom:16px; box-shadow:var(--shadow); }
+    h2 { margin:0 0 14px; font-size:20px; color:var(--accent); }
+    p, li { font-size:15px; color:#2f3a4d; }
+    ul, ol { padding-left:22px; margin:0 0 12px; }
+    .note, .warning { padding:14px 16px; border-radius:14px; border:1px solid var(--border); margin:14px 0; }
+    .note { background:var(--accent-2); }
+    .warning { background:var(--warn); border-color:var(--warn-border); }
+    .todo { background:var(--todo); padding:2px 7px; border-radius:8px; font-weight:700; }
+    .footer { color:var(--muted); font-size:13px; text-align:center; padding-top:16px; }
+    .footer a { font-weight:600; }
+    .toplink { display:inline-block; margin-bottom:12px; font-size:14px; color:var(--muted); }
+    .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:14px; }
+    .card-link { display:block; background:var(--card); border:1px solid var(--border); border-radius:18px; padding:20px; box-shadow:var(--shadow); color:inherit; }
+    .card-link h3 { margin:0 0 8px; color:var(--accent); font-size:18px; }
+    .langs { display:flex; flex-wrap:wrap; gap:8px; margin-top:14px; }
+    .lang-badge { display:inline-flex; padding:8px 12px; border-radius:999px; background:#fff; border:1px solid var(--border); font-size:13px; color:var(--muted); }
+    @media (max-width:640px){ .hero,.section{padding:20px;} h1{font-size:28px;} }
   </style>
 </head>
 <body>
-<div class="container">
-  <header>
-    <div class="logo">🪂</div>
-    <h1>Delete account</h1>
-    <p class="updated">Last updated: March 2026</p>
-  </header>
-
-  <section>
-    <h2>🗑️ How to delete your account</h2>
-    <p>You can delete your account directly from the app:</p>
-    <ul>
-      <li>Open <strong>Profile</strong></li>
-      <li>Scroll to the <strong>Account</strong> section</li>
-      <li>Tap <strong>Delete account</strong></li>
-      <li>Confirm the deletion</li>
-    </ul>
-    <p>The deletion flow is intended to be completed directly inside the application, without the need to email support.</p>
-  </section>
-
-  <section>
-    <h2>⚠️ What happens when you delete your account</h2>
-    <div class="warning">
-      <strong>Account deletion is permanent and cannot be undone.</strong>
-    </div>
-    <p>When you delete your account, the data associated with it is removed, which may include:</p>
-    <ul>
-      <li>Your user profile</li>
-      <li>Your jump history</li>
-      <li>Your favorite and recent dropzones</li>
-      <li>Your Home DZ</li>
-      <li>Your authentication/login account</li>
-      <li>Other information directly linked to your user profile within the app</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>📱 Data that may remain on your device</h2>
-    <p>After deleting your account, some local or temporary information may remain briefly on your device until the app refreshes its state or until you remove the application.</p>
-    <p>This may include local cache, preferences, or temporary system-stored data.</p>
-    <div class="highlight">
-      If you want to make sure all local remnants are removed from your device as well, you can sign out and uninstall the app after deleting your account.
-    </div>
-  </section>
-
-  <section>
-    <h2>📩 If you cannot access the app</h2>
-    <p>If you cannot sign in or cannot use the in-app deletion feature, you can contact us at:</p>
-    <p><strong><a href="mailto:skydivewindssupport@gmail.com">skydivewindssupport@gmail.com</a></strong></p>
-    <p>Please state that you want to delete your account and include the email address associated with your Skydiving Winds account.</p>
-  </section>
-
-  <section>
-    <h2>⏱️ Processing time</h2>
-    <p>When deletion is initiated from the app, the process is intended to run immediately or within a short technical timeframe. For manual support requests, we will review and process them within a reasonable period.</p>
-  </section>
-
-  <section>
-    <h2>🔐 More information</h2>
-    <ul>
-      <li><a href="privacy.html">Privacy Policy</a></li>
-      <li><a href="terms.html">Terms of Use</a></li>
-      <li><a href="support.html">Support</a></li>
-    </ul>
-  </section>
-
-  <footer>
-    <p>
-      © 2026 Skydiving Winds ·
-      <a href="privacy.html">Privacy Policy</a> ·
-      <a href="terms.html">Terms of Use</a> ·
-      <a href="support.html">Support</a> ·
-      <a href="mailto:skydivewindssupport@gmail.com">Contact</a>
-    </p>
-  </footer>
-</div>
+  <div class="container">
+    <div class="hero"><div class="logo">🪂</div><h1>Skydiving Winds</h1><div class="sub">Last updated: April 2026</div><div class="nav"><a class="nav-link" href="privacy.html">Privacy Policy</a><a class="nav-link" href="terms.html">Terms of Use</a><a class="nav-link" href="support.html">Support</a><a class="nav-link" href="delete-account.html">Delete account</a><a class="nav-link" href="legal-notice.html">Legal Notice</a></div></div><section class="section "><h2>Delete account</h2><div class="warning"><strong>Important:</strong> If you keep the email-only web path, make sure you monitor legal@skydivewinds.com. For Google Play review, a dedicated web form may be even safer in the future.</div></section><section class="section "><h2>In-app deletion path</h2><ol><li>Open <strong>Profile</strong>.</li><li>Go to the account section.</li><li>Tap <strong>Delete account</strong>.</li><li>Confirm the deletion flow.</li></ol><p>The in-app deletion path should be the main way to delete the account when you still have access to the app.</p></section><section class="section "><h2>Alternative web request if you cannot access the app</h2><p>If you no longer have access to the app, email <a href="mailto:legal@skydivewinds.com?subject=Skydiving%20Winds%20-%20Account%20deletion%20request">legal@skydivewinds.com</a> with the subject <strong>Account deletion request</strong> and include the email address linked to your account.</p><p>This page is intended to serve as the web resource referenced for account-deletion purposes.</p></section><section class="section "><h2>What is normally deleted</h2><ul><li>Authentication account and linked profile data.</li><li>Jump log entries linked to the account.</li><li>Favourite, home and recent dropzone links linked to the account.</li><li>Notification tokens linked to the account, where reasonably possible.</li><li>Other account-linked personal data no longer required for legal, security or technical reasons.</li></ul></section><section class="section "><h2>What may remain for a limited time</h2><ul><li>Data retained temporarily in backups.</li><li>Security, anti-abuse or diagnostic records needed for a limited period.</li><li>Data that must be kept to comply with legal obligations, if any apply.</li></ul><p>If some information must be retained, it should be limited to what is necessary and for no longer than required.</p></section><section class="section "><h2>Timing and confirmation</h2><p>Deletion requests should be completed within a reasonably quick period. If processing takes additional time, users should be informed. Where feasible, a confirmation message should be sent once the request has been completed.</p></section><section class="section "><h2>Need help?</h2><p>If you have trouble using the in-app deletion flow or need help identifying the account, contact <a href="mailto:support@skydivewinds.com">support@skydivewinds.com</a>. Privacy-related deletion requests may also be sent to <a href="mailto:legal@skydivewinds.com">legal@skydivewinds.com</a>.</p></section><div class="footer">© 2026 Skydiving Winds · <a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Use</a> · <a href="support.html">Support</a> · <a href="delete-account.html">Delete account</a> · <a href="legal-notice.html">Legal Notice</a> · <a href="mailto:legal@skydivewinds.com">legal@skydivewinds.com</a></div>
+  </div>
 </body>
 </html>

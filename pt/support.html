@@ -3,98 +3,43 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Suporte — Skydiving Winds</title>
+  <title>Support — Skydiving Winds</title>
+  <meta name="description" content="Support">
+  <style>
+    :root { --accent:#0d6efd; --accent-2:#eaf3ff; --bg:#f6f8fb; --card:#ffffff; --text:#172033; --muted:#586176; --border:#dde5f0; --warn:#fff5da; --warn-border:#f4c542; --danger:#fff1f2; --danger-border:#ef4444; --todo:#fff3cd; --shadow:0 10px 28px rgba(17,24,39,.06); }
+    * { box-sizing:border-box; }
+    body { margin:0; font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; color:var(--text); background:linear-gradient(180deg,#f8fbff 0%, var(--bg) 180px); line-height:1.72; }
+    a { color:var(--accent); text-decoration:none; }
+    a:hover { text-decoration:underline; }
+    .container { max-width:860px; margin:0 auto; padding:28px 18px 60px; }
+    .hero { background:var(--card); border:1px solid var(--border); border-radius:24px; padding:28px; box-shadow:var(--shadow); margin-bottom:18px; }
+    .logo { width:72px; height:72px; display:grid; place-items:center; background:var(--accent-2); border-radius:22px; font-size:36px; margin-bottom:16px; }
+    h1 { margin:0 0 6px; font-size:32px; line-height:1.12; }
+    .sub { color:var(--muted); font-size:14px; }
+    .nav { display:flex; flex-wrap:wrap; gap:10px; margin-top:18px; }
+    .nav-link { display:inline-flex; align-items:center; padding:10px 14px; border-radius:999px; background:#fff; border:1px solid var(--border); color:var(--text); font-weight:600; box-shadow:0 2px 8px rgba(17,24,39,.03); }
+    .section { background:var(--card); border:1px solid var(--border); border-radius:20px; padding:24px; margin-bottom:16px; box-shadow:var(--shadow); }
+    h2 { margin:0 0 14px; font-size:20px; color:var(--accent); }
+    p, li { font-size:15px; color:#2f3a4d; }
+    ul, ol { padding-left:22px; margin:0 0 12px; }
+    .note, .warning { padding:14px 16px; border-radius:14px; border:1px solid var(--border); margin:14px 0; }
+    .note { background:var(--accent-2); }
+    .warning { background:var(--warn); border-color:var(--warn-border); }
+    .todo { background:var(--todo); padding:2px 7px; border-radius:8px; font-weight:700; }
+    .footer { color:var(--muted); font-size:13px; text-align:center; padding-top:16px; }
+    .footer a { font-weight:600; }
+    .toplink { display:inline-block; margin-bottom:12px; font-size:14px; color:var(--muted); }
+    .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:14px; }
+    .card-link { display:block; background:var(--card); border:1px solid var(--border); border-radius:18px; padding:20px; box-shadow:var(--shadow); color:inherit; }
+    .card-link h3 { margin:0 0 8px; color:var(--accent); font-size:18px; }
+    .langs { display:flex; flex-wrap:wrap; gap:8px; margin-top:14px; }
+    .lang-badge { display:inline-flex; padding:8px 12px; border-radius:999px; background:#fff; border:1px solid var(--border); font-size:13px; color:var(--muted); }
+    @media (max-width:640px){ .hero,.section{padding:20px;} h1{font-size:28px;} }
+  </style>
 </head>
 <body>
-<div class="container">
-  <header>
-    <div class="logo">🪂</div>
-    <h1>Suporte</h1>
-    <p class="updated">Última atualização: março de 2026</p>
-  </header>
-
-  <section>
-    <h2>📩 Contacto</h2>
-    <p>Se precisares de ajuda com o Skydiving Winds, podes contactar-nos em:</p>
-    <p><strong><a href="mailto:skydivewindssupport@gmail.com">skydivewindssupport@gmail.com</a></strong></p>
-    <p>Procuramos responder num prazo razoável, normalmente dentro de alguns dias úteis.</p>
-  </section>
-
-  <section>
-    <h2>🛠️ Em que podemos ajudar</h2>
-    <ul>
-      <li>Problemas de login ou acesso</li>
-      <li>Verificação de email ou reposição de palavra-passe</li>
-      <li>Erros ao guardar o logbook ou perfil</li>
-      <li>Problemas com localização, permissões ou dados meteorológicos</li>
-      <li>Correções de dados de dropzones</li>
-      <li>Pedidos relacionados com privacidade, exportação ou eliminação de dados</li>
-      <li>Problemas técnicos ou fechos inesperados da aplicação</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>📋 O que incluir na tua mensagem</h2>
-    <p>Para te podermos ajudar mais depressa, inclui se possível:</p>
-    <ul>
-      <li>Modelo do dispositivo</li>
-      <li>Sistema operativo e versão</li>
-      <li>Versão da aplicação</li>
-      <li>Breve descrição do problema</li>
-      <li>Passos para reproduzir</li>
-      <li>Capturas de ecrã, se forem úteis</li>
-    </ul>
-    <div class="highlight">
-      <strong>Importante:</strong> não nos envies palavras-passe, códigos de acesso ou informação sensível desnecessária.
-    </div>
-  </section>
-
-  <section>
-    <h2>🔐 Conta, privacidade e dados</h2>
-    <p>Se o teu pedido estiver relacionado com a tua conta ou com dados pessoais, também podes consultar:</p>
-    <ul>
-      <li><a href="privacy.html">Política de Privacidade</a></li>
-      <li><a href="terms.html">Termos de Utilização</a></li>
-      <li><a href="delete-account.html">Eliminar conta</a></li>
-    </ul>
-    <p>Se pretenderes ajuda com exportação ou eliminação de dados, indica-o claramente no assunto do email.</p>
-  </section>
-
-  <section>
-    <h2>🌦️ Sobre os dados meteorológicos</h2>
-    <p>Skydiving Winds é uma ferramenta de apoio informativo. Se detetares valores meteorológicos estranhos ou diferenças entre os dados da app e as condições reais numa dropzone, podes contactar-nos indicando:</p>
-    <ul>
-      <li>A dropzone em causa</li>
-      <li>Data e hora aproximadas</li>
-      <li>Que valor parecia incorreto</li>
-      <li>Qualquer fonte de comparação que possuas</li>
-    </ul>
-    <div class="note">
-      A informação apresentada na app não substitui o critério operacional da dropzone, do piloto, do instrutor ou da equipa de segurança.
-    </div>
-  </section>
-
-  <section>
-    <h2>🧾 Pedidos frequentes</h2>
-    <p><strong>Não estou a receber o email de verificação ou reposição de palavra-passe.</strong></p>
-    <p>Verifica as pastas de spam, lixo eletrónico ou promoções. Se continuar sem chegar, contacta-nos a partir do mesmo endereço de email usado na app.</p>
-
-    <p><strong>Quero eliminar a minha conta.</strong></p>
-    <p>Podes fazê-lo na aplicação na secção de perfil. Também tens instruções em <a href="delete-account.html">Eliminar conta</a>.</p>
-
-    <p><strong>Quero corrigir dados de uma dropzone.</strong></p>
-    <p>Podes usar a opção de sugestão na aplicação ou contactar-nos com os detalhes da correção.</p>
-  </section>
-
-  <footer>
-    <p>
-      © 2026 Skydiving Winds ·
-      <a href="privacy.html">Política de Privacidade</a> ·
-      <a href="terms.html">Termos de Utilização</a> ·
-      <a href="delete-account.html">Eliminar conta</a> ·
-      <a href="mailto:skydivewindssupport@gmail.com">Contacto</a>
-    </p>
-  </footer>
-</div>
+  <div class="container">
+    <div class="hero"><div class="logo">🪂</div><h1>Skydiving Winds</h1><div class="sub">Last updated: April 2026</div><div class="nav"><a class="nav-link" href="privacy.html">Política de Privacidade</a><a class="nav-link" href="terms.html">Termos de Utilização</a><a class="nav-link" href="support.html">Suporte</a><a class="nav-link" href="delete-account.html">Eliminar conta</a><a class="nav-link" href="legal-notice.html">Aviso Legal</a></div></div><section class="section "><h2>Support</h2></section><section class="section "><h2>How to contact support</h2><p>Contact: <a href="mailto:support@skydivewinds.com">support@skydivewinds.com</a></p><p>You can also use the in-app feedback form for technical issues, bugs, suggestions or privacy-related requests.</p></section><section class="section "><h2>What support can help with</h2><ul><li>Sign-in, account creation, verification or password reset issues.</li><li>Jump log, favourites, profile or sync issues.</li><li>Notification problems.</li><li>Weather data anomalies or dropzone data corrections.</li><li>Privacy, export, deletion or other legal/privacy requests.</li><li>Technical bugs or unexpected crashes.</li></ul></section><section class="section "><h2>What to include in your message</h2><ul><li>The email address linked to your account, if any.</li><li>Device model, operating system and app version.</li><li>A clear description of the issue.</li><li>Steps to reproduce the problem.</li><li>Screenshots, if useful.</li></ul><p>Please do not send passwords, one-time codes or unnecessary sensitive information.</p></section><section class="section "><h2>Response times</h2><p>Support is provided on a reasonable-efforts basis. There is no guaranteed response time, but messages are normally reviewed as soon as reasonably possible.</p></section><section class="section "><h2>Weather and safety issues</h2><p>If you believe the app displayed inaccurate weather information, include the dropzone, approximate date/time, the value that looked wrong and any comparison source you used. This helps investigate provider or interpretation issues.</p><p>Skydiving Winds is not an emergency service. Do not rely on the app or these pages for urgent operational or rescue decisions.</p></section><section class="section "><h2>Related pages</h2><ul><li><a href="privacy.html">Privacy Policy</a></li><li><a href="terms.html">Terms of Use</a></li><li><a href="delete-account.html">Delete account</a></li><li><a href="legal-notice.html">Legal Notice</a></li></ul></section><div class="footer">© 2026 Skydiving Winds · <a href="privacy.html">Política de Privacidade</a> · <a href="terms.html">Termos de Utilização</a> · <a href="support.html">Suporte</a> · <a href="delete-account.html">Eliminar conta</a> · <a href="legal-notice.html">Aviso Legal</a> · <a href="mailto:support@skydivewinds.com">support@skydivewinds.com</a></div>
+  </div>
 </body>
 </html>

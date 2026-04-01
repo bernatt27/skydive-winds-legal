@@ -4,141 +4,42 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Política de Privacidad — Skydiving Winds</title>
+  <meta name="description" content="Esta Política de Privacidad explica qué datos personales puede tratar Skydiving Winds, por qué se tratan, qué proveedores intervienen, cuánto tiempo se conservan y cómo pueden las personas usuarias ejercer sus derechos.">
   <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; color: #1a1a2e; background: #f8f9fa; line-height: 1.7; }
-    .container { max-width: 720px; margin: 0 auto; padding: 48px 24px; }
-    header { text-align: center; margin-bottom: 48px; }
-    .logo { font-size: 48px; margin-bottom: 12px; }
-    h1 { font-size: 28px; font-weight: 800; color: #0066ff; margin-bottom: 8px; }
-    .updated { color: #888; font-size: 14px; }
-    section { background: white; border-radius: 16px; padding: 28px; margin-bottom: 20px; border: 1px solid #e8eaf0; }
-    h2 { font-size: 17px; font-weight: 700; color: #0066ff; margin-bottom: 14px; display: flex; align-items: center; gap: 8px; }
-    p { color: #444; margin-bottom: 12px; font-size: 15px; }
-    ul { padding-left: 20px; margin-bottom: 12px; }
-    li { color: #444; margin-bottom: 6px; font-size: 15px; }
-    a { color: #0066ff; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    .highlight { background: #f0f5ff; border-left: 4px solid #0066ff; padding: 14px 18px; border-radius: 8px; margin: 16px 0; }
-    footer { text-align: center; color: #888; font-size: 13px; margin-top: 40px; }
+    :root { --accent:#0d6efd; --accent-2:#eaf3ff; --bg:#f6f8fb; --card:#ffffff; --text:#172033; --muted:#586176; --border:#dde5f0; --warn:#fff5da; --warn-border:#f4c542; --danger:#fff1f2; --danger-border:#ef4444; --todo:#fff3cd; --shadow:0 10px 28px rgba(17,24,39,.06); }
+    * { box-sizing:border-box; }
+    body { margin:0; font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; color:var(--text); background:linear-gradient(180deg,#f8fbff 0%, var(--bg) 180px); line-height:1.72; }
+    a { color:var(--accent); text-decoration:none; }
+    a:hover { text-decoration:underline; }
+    .container { max-width:860px; margin:0 auto; padding:28px 18px 60px; }
+    .hero { background:var(--card); border:1px solid var(--border); border-radius:24px; padding:28px; box-shadow:var(--shadow); margin-bottom:18px; }
+    .logo { width:72px; height:72px; display:grid; place-items:center; background:var(--accent-2); border-radius:22px; font-size:36px; margin-bottom:16px; }
+    h1 { margin:0 0 6px; font-size:32px; line-height:1.12; }
+    .sub { color:var(--muted); font-size:14px; }
+    .nav { display:flex; flex-wrap:wrap; gap:10px; margin-top:18px; }
+    .nav-link { display:inline-flex; align-items:center; padding:10px 14px; border-radius:999px; background:#fff; border:1px solid var(--border); color:var(--text); font-weight:600; box-shadow:0 2px 8px rgba(17,24,39,.03); }
+    .section { background:var(--card); border:1px solid var(--border); border-radius:20px; padding:24px; margin-bottom:16px; box-shadow:var(--shadow); }
+    h2 { margin:0 0 14px; font-size:20px; color:var(--accent); }
+    p, li { font-size:15px; color:#2f3a4d; }
+    ul, ol { padding-left:22px; margin:0 0 12px; }
+    .note, .warning { padding:14px 16px; border-radius:14px; border:1px solid var(--border); margin:14px 0; }
+    .note { background:var(--accent-2); }
+    .warning { background:var(--warn); border-color:var(--warn-border); }
+    .todo { background:var(--todo); padding:2px 7px; border-radius:8px; font-weight:700; }
+    .footer { color:var(--muted); font-size:13px; text-align:center; padding-top:16px; }
+    .footer a { font-weight:600; }
+    .toplink { display:inline-block; margin-bottom:12px; font-size:14px; color:var(--muted); }
+    .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:14px; }
+    .card-link { display:block; background:var(--card); border:1px solid var(--border); border-radius:18px; padding:20px; box-shadow:var(--shadow); color:inherit; }
+    .card-link h3 { margin:0 0 8px; color:var(--accent); font-size:18px; }
+    .langs { display:flex; flex-wrap:wrap; gap:8px; margin-top:14px; }
+    .lang-badge { display:inline-flex; padding:8px 12px; border-radius:999px; background:#fff; border:1px solid var(--border); font-size:13px; color:var(--muted); }
+    @media (max-width:640px){ .hero,.section{padding:20px;} h1{font-size:28px;} }
   </style>
 </head>
 <body>
-<div class="container">
-  <header>
-    <div class="logo">🪂</div>
-    <h1>Política de Privacidad</h1>
-    <p class="updated">Última actualización: marzo de 2026</p>
-  </header>
-
-  <section>
-    <h2>📋 Quiénes somos</h2>
-    <p>Skydiving Winds es una aplicación móvil diseñada para paracaidistas que proporciona información meteorológica y herramientas de apoyo para la planificación y revisión de saltos. Esta política explica qué datos tratamos, con qué finalidad y cómo puedes gestionar tu información.</p>
-    <p>Contacto: <a href="mailto:skydivewindssupport@gmail.com">skydivewindssupport@gmail.com</a></p>
-  </section>
-
-  <section>
-    <h2>📍 Datos de ubicación</h2>
-    <p>La app puede solicitar acceso a tu ubicación <strong>solo mientras la app está en uso</strong> y únicamente si tú lo autorizas. La ubicación se utiliza exclusivamente para:</p>
-    <ul>
-      <li>Cargar datos de viento y condiciones meteorológicas cercanas</li>
-      <li>Mostrar dropzones próximas a tu posición</li>
-    </ul>
-    <div class="highlight">
-      <strong>No almacenamos tu ubicación GPS en nuestros servidores.</strong> Las coordenadas se utilizan en tiempo real para consultar servicios meteorológicos y se descartan tras obtener la respuesta.
-    </div>
-  </section>
-
-  <section>
-    <h2>🪂 Historial de saltos</h2>
-    <p>Si creas una cuenta, puedes registrar voluntariamente tu historial de saltos. Estos datos pueden incluir:</p>
-    <ul>
-      <li>Fecha, hora y dropzone del salto</li>
-      <li>Altitudes de salida y apertura</li>
-      <li>Tipo de salto y equipo utilizado</li>
-      <li>Notas personales e incidencias</li>
-      <li>Condiciones meteorológicas guardadas opcionalmente junto al salto</li>
-    </ul>
-    <p>Estos datos se almacenan en nuestra base de datos para que puedas consultarlos y gestionarlos desde tus dispositivos. Puedes eliminarlos en cualquier momento desde la app o solicitando ayuda por correo.</p>
-  </section>
-
-  <section>
-    <h2>👤 Datos de cuenta</h2>
-    <p>Si te registras, podemos tratar los siguientes datos:</p>
-    <ul>
-      <li>Email de acceso</li>
-      <li>Nombre o alias (si lo proporcionas)</li>
-      <li>Preferencias de uso: altitudes, límites de viento, unidades y disciplinas</li>
-      <li>Equipo registrado (opcional)</li>
-      <li>Dropzones favoritas y Home DZ</li>
-    </ul>
-    <p>La autenticación y gestión de credenciales se realiza a través de Supabase Auth. No accedemos a tu contraseña en texto claro.</p>
-    <p>Puedes usar parte de la app sin cuenta. En ese caso, la información permanece solo en tu dispositivo salvo las consultas necesarias a servicios externos para obtener datos meteorológicos.</p>
-  </section>
-
-  <section>
-    <h2>🌐 Servicios de terceros</h2>
-    <p>La app utiliza servicios externos para funcionar:</p>
-    <ul>
-      <li><strong>Open-Meteo</strong> — proveedor de datos meteorológicos. Puede recibir coordenadas para devolver datos de viento y previsión.</li>
-      <li><strong>Supabase</strong> — proveedor de base de datos y autenticación. Utilizamos este servicio para gestionar cuentas y almacenar datos asociados al perfil y logbook.</li>
-    </ul>
-    <p>Aplicamos medidas orientadas a la protección de datos y seleccionamos proveedores adecuados para el tratamiento de la información. Si necesitas más detalle sobre proveedores o ubicación de los datos, puedes contactarnos.</p>
-  </section>
-
-  <section>
-    <h2>💾 Almacenamiento local en tu dispositivo</h2>
-    <p>Para mejorar la experiencia, la app puede guardar localmente ciertas preferencias y datos temporales, por ejemplo:</p>
-    <ul>
-      <li>Unidades de medida y preferencias de uso</li>
-      <li>Caché de pantallas o datos recientes</li>
-      <li>Información necesaria para mantener tu sesión iniciada según la configuración de autenticación disponible en la plataforma</li>
-    </ul>
-    <p>No utilizamos cookies publicitarias ni técnicas de seguimiento de terceros dentro de la app.</p>
-  </section>
-
-  <section>
-    <h2>✉️ Comunicaciones</h2>
-    <p>No enviamos correos de marketing.</p>
-    <p>Los únicos emails que puedes recibir son los necesarios para el funcionamiento de la cuenta, por ejemplo:</p>
-    <ul>
-      <li>Verificación del email al registrarte</li>
-      <li>Enlace para restablecer o cambiar la contraseña, si lo solicitas</li>
-      <li>Respuestas de soporte si nos contactas</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>🗑️ Tus derechos y control sobre tus datos</h2>
-    <p>Puedes:</p>
-    <ul>
-      <li>Acceder a tus datos desde la propia app</li>
-      <li>Actualizar o corregir la información de tu perfil</li>
-      <li>Eliminar tu cuenta y los datos asociados desde la app</li>
-      <li>Solicitar asistencia para exportación o eliminación escribiendo a soporte</li>
-    </ul>
-    <p>Más información:</p>
-    <ul>
-      <li><a href="support.html">Soporte</a></li>
-      <li><a href="delete-account.html">Eliminar cuenta</a></li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>⚖️ Uso informativo y responsabilidad</h2>
-    <p>Skydiving Winds es una herramienta de <strong>apoyo informativo</strong>. Los datos meteorológicos mostrados provienen de servicios y modelos externos y no sustituyen en ningún caso el criterio del piloto, instructor, manifest o responsable operativo de la dropzone.</p>
-    <p>La decisión de saltar o no saltar es siempre responsabilidad exclusiva del usuario.</p>
-  </section>
-
-  <footer>
-    <p>
-      © 2026 Skydiving Winds ·
-      <a href="terms.html">Términos de Uso</a> ·
-      <a href="support.html">Soporte</a> ·
-      <a href="delete-account.html">Eliminar cuenta</a> ·
-      <a href="mailto:skydivewindssupport@gmail.com">Contacto</a>
-    </p>
-  </footer>
-</div>
+  <div class="container">
+    <div class="hero"><div class="logo">🪂</div><h1>Skydiving Winds</h1><div class="sub">Última actualización: April 2026</div><div class="nav"><a class="nav-link" href="privacy.html">Política de Privacidad</a><a class="nav-link" href="terms.html">Términos de Uso</a><a class="nav-link" href="support.html">Soporte</a><a class="nav-link" href="delete-account.html">Eliminar cuenta</a><a class="nav-link" href="legal-notice.html">Aviso Legal</a></div></div><section class="section "><h2>Política de Privacidad</h2><p>Esta Política de Privacidad explica qué datos personales puede tratar Skydiving Winds, por qué se tratan, qué proveedores intervienen, cuánto tiempo se conservan y cómo pueden las personas usuarias ejercer sus derechos.</p></section><section class="section "><h2>Quién es el responsable del tratamiento</h2><p><strong>Responsable:</strong> Bernat Marimon Palarea, desarrollador individual que opera Skydiving Winds.</p><p><strong>Email de contacto:</strong> <a href="mailto:legal@skydivewinds.com">legal@skydivewinds.com</a></p><p><strong>Identificación completa del servicio:</strong> consulta el <a href="legal-notice.html">Aviso Legal</a>.</p></section><section class="section "><h2>Resumen breve</h2><ul><li>Puedes usar partes de la app sin crear una cuenta.</li><li>Si creas una cuenta, los datos de cuenta, perfil, libro de saltos, favoritos, ajustes y avatar opcional pueden almacenarse en infraestructura vinculada a Supabase para que tu información esté disponible entre sesiones y dispositivos.</li><li>Si autorizas la ubicación, la app usa tus coordenadas para solicitar meteorología y dropzones cercanas.</li><li>Si activas notificaciones, puede almacenarse un token push para poder enviarte avisos.</li><li>Si contactas con soporte o usas el formulario interno de feedback, pueden tratarse tu mensaje y un contexto técnico limitado para responderte y mejorar el servicio.</li><li>La app también usa informes de errores/crashes y registros técnicos para mantener la estabilidad y la seguridad.</li></ul></section><section class="section "><h2>Qué datos pueden tratarse</h2><ul><li><strong>Datos de cuenta e identidad:</strong> dirección de email, nombre o alias, identificadores de autenticación, metadatos de restablecimiento de contraseña y estado de la cuenta.</li><li><strong>Datos de perfil:</strong> unidades, altitudes, límites de viento, disciplinas, nivel, número de licencia, total de saltos, teléfono, edad, peso, nacionalidad, preferencia de notificaciones, información de equipo, URL del avatar y dropzones favoritas o de casa.</li><li><strong>Datos del libro de saltos:</strong> fecha del salto, dropzone, altitud de salida/apertura, tipo de salto, equipo, tamaño de campana, tiempo de caída libre, condiciones, notas, incidentes, aeronave, instructor y captura opcional del viento.</li><li><strong>Datos de localización:</strong> coordenadas usadas para solicitar meteorología/previsión y dropzones cercanas cuando das permiso al dispositivo.</li><li><strong>Foto/avatar:</strong> si eliges una foto de perfil, la imagen seleccionada puede subirse y vincularse a tu perfil.</li><li><strong>Datos de notificaciones:</strong> token push, plataforma y preferencias relacionadas si activas notificaciones.</li><li><strong>Datos de soporte y feedback:</strong> asunto, mensaje, versión de la app, plataforma y cualquier información que incluyas voluntariamente.</li><li><strong>Datos de diagnóstico y seguridad:</strong> informes de errores, logs técnicos, versión/build y contexto técnico limitado necesario para mantener el servicio.</li></ul></section><section class="section "><h2>Para qué se tratan los datos y bases jurídicas</h2><ul><li><strong>Crear y operar tu cuenta, sincronizar perfil, favoritos y libro de saltos:</strong> ejecución del servicio solicitado por ti.</li><li><strong>Enviar emails de restablecimiento de contraseña, acceso y seguridad:</strong> ejecución del servicio y seguridad del servicio.</li><li><strong>Cargar meteorología, previsión y dropzones cercanas:</strong> tu solicitud de esa funcionalidad; cuando se usa la ubicación, la base jurídica es tu consentimiento/permisos a nivel de dispositivo.</li><li><strong>Ofrecer notificaciones opcionales:</strong> tu consentimiento/permisos y tu preferencia dentro de la app.</li><li><strong>Gestionar un avatar o foto de perfil opcional:</strong> tu solicitud y el permiso que concedes en el dispositivo.</li><li><strong>Responder a soporte o feedback:</strong> ejecución del servicio e interés legítimo en prestar soporte y mejorar la app.</li><li><strong>Detectar errores, mantener seguridad y prevenir abusos:</strong> interés legítimo en operar un servicio fiable y seguro.</li></ul></section><section class="section "><h2>Permisos, almacenamiento local y lo que permanece en tu dispositivo</h2><p>La app puede solicitar acceso a ubicación, biblioteca de fotos y notificaciones, según las funciones que utilices. Puedes controlar estos permisos en los ajustes del dispositivo.</p><p>La app también almacena localmente datos limitados como información de sesión, preferencias anónimas, caché y ajustes necesarios para que funcione correctamente. Parte de la información de autenticación puede almacenarse usando mecanismos de almacenamiento seguro del sistema y almacenamiento local.</p><p>La app no utiliza SDKs publicitarios de terceros ni publicidad dirigida basada en tu comportamiento dentro de la app.</p></section><section class="section "><h2>Proveedores y destinatarios</h2><p>La app depende de proveedores externos para funcionar. Entre ellos pueden estar:</p><ul><li><strong>Supabase</strong> para autenticación, base de datos y servicios backend relacionados.</li><li><strong>Open-Meteo</strong> para solicitudes de meteorología y previsión.</li><li><strong>Sentry</strong> para monitorización de errores/crashes y diagnóstico.</li><li><strong>Infraestructura de notificaciones de Expo / Apple / Google</strong> si activas notificaciones push.</li><li><strong>Infraestructura de email/soporte</strong> usada para enviar y recibir comunicaciones de cuenta o soporte.</li></ul><p>Estos proveedores pueden tratar datos por cuenta del servicio cuando corresponda. También pueden aplicar tratamientos limitados necesarios para operar su propia infraestructura.</p></section><section class="section "><h2>Transferencias internacionales</h2><p>Algunos proveedores pueden tratar o almacenar datos fuera de tu país de residencia o fuera del Espacio Económico Europeo. Cuando proceda, dichas transferencias deberían apoyarse en garantías adecuadas, como cláusulas contractuales tipo, decisiones de adecuación u otros mecanismos equivalentes ofrecidos por el proveedor.</p></section><section class="section "><h2>Conservación</h2><ul><li><strong>Cuenta, perfil, favoritos y libro de saltos:</strong> normalmente se conservan mientras la cuenta permanezca activa.</li><li><strong>Eventos de seguridad y restablecimiento de contraseña:</strong> se conservan durante el tiempo razonablemente necesario para operar y asegurar la cuenta.</li><li><strong>Tokens push:</strong> se conservan mientras las notificaciones sigan activadas o hasta que dejen de funcionar, se sustituyan o se elimine la cuenta.</li><li><strong>Soporte y feedback:</strong> se conservan durante el tiempo necesario para responder, hacer seguimiento y atender posibles responsabilidades legales o de seguridad.</li><li><strong>Diagnósticos y logs técnicos:</strong> se conservan por un periodo limitado según la configuración del proveedor y las necesidades operativas/de seguridad.</li><li><strong>Datos de cuentas eliminadas:</strong> se eliminan o anonimizan tan pronto como sea razonablemente posible, salvo cuando deban mantenerse temporalmente por seguridad, prevención del fraude, integridad de copias de seguridad o cumplimiento legal.</li></ul><p>Si necesitas detalles de conservación para una categoría concreta, contacta con soporte.</p></section><section class="section "><h2>Tus derechos</h2><p>Según la ley aplicable, puedes tener derecho de acceso, rectificación, supresión, limitación, oposición y portabilidad, así como a retirar el consentimiento cuando el tratamiento se base en él. También puedes pedir ayuda para la eliminación de cuenta y la exportación de datos.</p><p>Puedes escribir a <a href="mailto:legal@skydivewinds.com">legal@skydivewinds.com</a>. Si consideras que se han vulnerado tus derechos de protección de datos, también puedes reclamar ante la autoridad de control competente, incluida la Agencia Española de Protección de Datos (AEPD) cuando proceda.</p></section><section class="section "><h2>Eliminación de cuenta</h2><p>La app incluye una vía interna para eliminar la cuenta. También se ofrece un recurso web en <a href="delete-account.html">Eliminar cuenta</a> para quienes ya no tengan acceso a la app. La eliminación de cuenta pretende borrar la cuenta y los datos asociados que ya no sea necesario conservar.</p></section><section class="section "><h2>Cambios en esta política</h2><p>Esta política puede actualizarse si cambia el servicio, se añaden nuevos proveedores o evolucionan los requisitos legales. La versión más reciente se publicará en estas páginas legales con la fecha actualizada en la parte superior.</p></section><div class="footer">© 2026 Skydiving Winds · <a href="privacy.html">Política de Privacidad</a> · <a href="terms.html">Términos de Uso</a> · <a href="support.html">Soporte</a> · <a href="delete-account.html">Eliminar cuenta</a> · <a href="legal-notice.html">Aviso Legal</a> · <a href="mailto:legal@skydivewinds.com">legal@skydivewinds.com</a></div>
+  </div>
 </body>
 </html>
