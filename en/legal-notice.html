@@ -1,45 +1,297 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Legal Notice — Skydiving Winds</title>
   <meta name="description" content="Legal Notice">
   <style>
-    :root { --accent:#0d6efd; --accent-2:#eaf3ff; --bg:#f6f8fb; --card:#ffffff; --text:#172033; --muted:#586176; --border:#dde5f0; --warn:#fff5da; --warn-border:#f4c542; --danger:#fff1f2; --danger-border:#ef4444; --todo:#fff3cd; --shadow:0 10px 28px rgba(17,24,39,.06); }
-    * { box-sizing:border-box; }
-    body { margin:0; font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; color:var(--text); background:linear-gradient(180deg,#f8fbff 0%, var(--bg) 180px); line-height:1.72; }
-    a { color:var(--accent); text-decoration:none; }
-    a:hover { text-decoration:underline; }
-    .container { max-width:860px; margin:0 auto; padding:28px 18px 60px; }
-    .hero { background:var(--card); border:1px solid var(--border); border-radius:24px; padding:28px; box-shadow:var(--shadow); margin-bottom:18px; }
-    .logo { width:72px; height:72px; display:grid; place-items:center; background:var(--accent-2); border-radius:22px; font-size:36px; margin-bottom:16px; }
-    h1 { margin:0 0 6px; font-size:32px; line-height:1.12; }
-    .sub { color:var(--muted); font-size:14px; }
-    .nav { display:flex; flex-wrap:wrap; gap:10px; margin-top:18px; }
-    .nav-link { display:inline-flex; align-items:center; padding:10px 14px; border-radius:999px; background:#fff; border:1px solid var(--border); color:var(--text); font-weight:600; box-shadow:0 2px 8px rgba(17,24,39,.03); }
-    .section { background:var(--card); border:1px solid var(--border); border-radius:20px; padding:24px; margin-bottom:16px; box-shadow:var(--shadow); }
-    h2 { margin:0 0 14px; font-size:20px; color:var(--accent); }
-    p, li { font-size:15px; color:#2f3a4d; }
-    ul, ol { padding-left:22px; margin:0 0 12px; }
-    .note, .warning { padding:14px 16px; border-radius:14px; border:1px solid var(--border); margin:14px 0; }
-    .note { background:var(--accent-2); }
-    .warning { background:var(--warn); border-color:var(--warn-border); }
-    .todo { background:var(--todo); padding:2px 7px; border-radius:8px; font-weight:700; }
-    .footer { color:var(--muted); font-size:13px; text-align:center; padding-top:16px; }
-    .footer a { font-weight:600; }
-    .toplink { display:inline-block; margin-bottom:12px; font-size:14px; color:var(--muted); }
-    .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:14px; }
-    .card-link { display:block; background:var(--card); border:1px solid var(--border); border-radius:18px; padding:20px; box-shadow:var(--shadow); color:inherit; }
-    .card-link h3 { margin:0 0 8px; color:var(--accent); font-size:18px; }
-    .langs { display:flex; flex-wrap:wrap; gap:8px; margin-top:14px; }
-    .lang-badge { display:inline-flex; padding:8px 12px; border-radius:999px; background:#fff; border:1px solid var(--border); font-size:13px; color:var(--muted); }
-    @media (max-width:640px){ .hero,.section{padding:20px;} h1{font-size:28px;} }
+    :root {
+      --accent: #0d6efd;
+      --accent-2: #eaf3ff;
+      --bg: #f6f8fb;
+      --card: #ffffff;
+      --text: #172033;
+      --muted: #586176;
+      --border: #dde5f0;
+      --warn: #fff5da;
+      --warn-border: #f4c542;
+      --danger: #fff1f2;
+      --danger-border: #ef4444;
+      --todo: #fff3cd;
+      --shadow: 0 10px 28px rgba(17, 24, 39, .06);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      color: var(--text);
+      background: linear-gradient(180deg, #f8fbff 0%, var(--bg) 180px);
+      line-height: 1.72;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 28px 18px 60px;
+    }
+
+    .hero {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: 28px;
+      box-shadow: var(--shadow);
+      margin-bottom: 18px;
+    }
+
+    .logo {
+      width: 72px;
+      height: 72px;
+      display: grid;
+      place-items: center;
+      background: var(--accent-2);
+      border-radius: 22px;
+      font-size: 36px;
+      margin-bottom: 16px;
+    }
+
+    h1 {
+      margin: 0 0 6px;
+      font-size: 32px;
+      line-height: 1.12;
+    }
+
+    .sub {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 18px;
+    }
+
+    .nav-link {
+      display: inline-flex;
+      align-items: center;
+      padding: 10px 14px;
+      border-radius: 999px;
+      background: #fff;
+      border: 1px solid var(--border);
+      color: var(--text);
+      font-weight: 600;
+      box-shadow: 0 2px 8px rgba(17, 24, 39, .03);
+    }
+
+    .section {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 24px;
+      margin-bottom: 16px;
+      box-shadow: var(--shadow);
+    }
+
+    h2 {
+      margin: 0 0 14px;
+      font-size: 20px;
+      color: var(--accent);
+    }
+
+    p,
+    li {
+      font-size: 15px;
+      color: #2f3a4d;
+    }
+
+    ul,
+    ol {
+      padding-left: 22px;
+      margin: 0 0 12px;
+    }
+
+    .note,
+    .warning {
+      padding: 14px 16px;
+      border-radius: 14px;
+      border: 1px solid var(--border);
+      margin: 14px 0;
+    }
+
+    .note {
+      background: var(--accent-2);
+    }
+
+    .warning {
+      background: var(--warn);
+      border-color: var(--warn-border);
+    }
+
+    .todo {
+      background: var(--todo);
+      padding: 2px 7px;
+      border-radius: 8px;
+      font-weight: 700;
+    }
+
+    .footer {
+      color: var(--muted);
+      font-size: 13px;
+      text-align: center;
+      padding-top: 16px;
+    }
+
+    .footer a {
+      font-weight: 600;
+    }
+
+    .toplink {
+      display: inline-block;
+      margin-bottom: 12px;
+      font-size: 14px;
+      color: var(--muted);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 14px;
+    }
+
+    .card-link {
+      display: block;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 20px;
+      box-shadow: var(--shadow);
+      color: inherit;
+    }
+
+    .card-link h3 {
+      margin: 0 0 8px;
+      color: var(--accent);
+      font-size: 18px;
+    }
+
+    .langs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 14px;
+    }
+
+    .lang-badge {
+      display: inline-flex;
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: #fff;
+      border: 1px solid var(--border);
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    @media (max-width:640px) {
+
+      .hero,
+      .section {
+        padding: 20px;
+      }
+
+      h1 {
+        font-size: 28px;
+      }
+    }
   </style>
 </head>
+
 <body>
   <div class="container">
-    <div class="hero"><div class="logo">🪂</div><h1>Skydiving Winds</h1><div class="sub">Last updated: April 2026</div><div class="nav"><a class="nav-link" href="privacy.html">Privacy Policy</a><a class="nav-link" href="terms.html">Terms of Use</a><a class="nav-link" href="support.html">Support</a><a class="nav-link" href="delete-account.html">Delete account</a><a class="nav-link" href="legal-notice.html">Legal Notice</a></div></div><section class="section "><h2>Legal Notice</h2><p>This page contains the general information that should be permanently, easily and directly available for the service.</p><div class="warning"><strong>Important:</strong> Before public release, complete the highlighted identity fields below. Spanish law may require the service provider’s name, domicile/residence, email and tax ID to be permanently accessible for an information society service.</div></section><section class="section "><h2>Service provider</h2><p><strong>Name:</strong> Bernat Marimon Palarea</p><p><strong>Operating capacity:</strong> Individual developer / natural person.</p><p><strong>Contact email:</strong> <a href="mailto:legal@skydivewinds.com">legal@skydivewinds.com</a></p><p><strong>General support:</strong> <a href="mailto:support@skydivewinds.com">support@skydivewinds.com</a></p><p><strong>Postal address / service address:</strong> <span class="todo">[FILL BEFORE PUBLISHING: postal address / service address in Spain]</span></p><p><strong>Tax ID (NIF/NIE or equivalent, if applicable):</strong> <span class="todo">[FILL BEFORE PUBLISHING: NIF/NIE or other tax ID if applicable]</span></p></section><section class="section "><h2>Service and domain</h2><p><strong>Service:</strong> Skydiving Winds</p><p><strong>Main domain:</strong> skydivewinds.com</p><p><strong>Current business model:</strong> the app is currently offered free of charge unless and until new pricing information is published.</p></section><section class="section "><h2>Registration, authorisation and professional status</h2><p><strong>Mercantile Registry:</strong> not applicable unless the operator later becomes registered and updates this page.</p><p><strong>Administrative authorisation:</strong> not applicable to the operation of the app as currently offered, unless a future regulated activity is added.</p><p><strong>Regulated profession / professional association:</strong> not applicable unless expressly stated here in the future.</p></section><section class="section "><h2>Use of the site and app</h2><p>Access to and use of these legal pages and the app are subject to the <a href="terms.html">Terms of Use</a> and the <a href="privacy.html">Privacy Policy</a>.</p></section><section class="section "><h2>Intellectual property</h2><p>The software, design, texts, branding and original content of Skydiving Winds, unless otherwise stated, belong to the operator or are used with permission. Third-party materials remain subject to their respective owners and licences.</p></section><section class="section "><h2>External links and third-party services</h2><p>These legal pages and the app may contain links to external providers or resources. The operator is not responsible for third-party content, availability or policies beyond what is required by applicable law.</p></section><section class="section "><h2>Applicable law</h2><p>Unless mandatory consumer law provides otherwise, the service is governed by Spanish law and, where applicable, European Union law.</p></section><div class="footer">© 2026 Skydiving Winds · <a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Use</a> · <a href="support.html">Support</a> · <a href="delete-account.html">Delete account</a> · <a href="legal-notice.html">Legal Notice</a> · <a href="mailto:legal@skydivewinds.com">legal@skydivewinds.com</a></div>
+    <div class="hero">
+      <div class="logo">🪂</div>
+      <h1>Skydiving Winds</h1>
+      <div class="sub">Last updated: April 2026</div>
+      <div class="nav"><a class="nav-link" href="privacy.html">Privacy Policy</a><a class="nav-link"
+          href="terms.html">Terms of Use</a><a class="nav-link" href="support.html">Support</a><a class="nav-link"
+          href="delete-account.html">Delete account</a><a class="nav-link" href="legal-notice.html">Legal Notice</a>
+      </div>
+    </div>
+    <section class="section ">
+      <h2>Legal Notice</h2>
+      <p>This page contains the general information that should be permanently, easily and directly available for the
+        service.</p>
+      <div class="warning"><strong>Important:</strong> Before public release, complete the highlighted identity fields
+        below. Spanish law may require the service provider’s name, domicile/residence, email and tax ID to be
+        permanently accessible for an information society service.</div>
+    </section>
+    <section class="section ">
+      <h2>Service provider</h2>
+      <p><strong>Name:</strong> Bernat Marimon Palarea</p>
+      <p><strong>Operating capacity:</strong> Individual developer / natural person.</p>
+      <p><strong>Contact email:</strong> <a href="mailto:legal@skydivewinds.com">legal@skydivewinds.com</a></p>
+      <p><strong>General support:</strong> <a href="mailto:support@skydivewinds.com">support@skydivewinds.com</a></p>
+      <p><strong>Postal address / service address:</strong> <span class="todo">Ramoneda 30, At, Cornella de Llobregat (Spain)</span></p>
+      <p><strong>Tax ID (NIF/NIE or equivalent, if applicable):</strong> <span class="todo">47320442N</span></p>
+    </section>
+    <section class="section ">
+      <h2>Service and domain</h2>
+      <p><strong>Service:</strong> Skydiving Winds</p>
+      <p><strong>Main domain:</strong> skydivewinds.com</p>
+      <p><strong>Current business model:</strong> the app is currently offered free of charge unless and until new
+        pricing information is published.</p>
+    </section>
+    <section class="section ">
+      <h2>Registration, authorisation and professional status</h2>
+      <p><strong>Mercantile Registry:</strong> not applicable unless the operator later becomes registered and updates
+        this page.</p>
+      <p><strong>Administrative authorisation:</strong> not applicable to the operation of the app as currently offered,
+        unless a future regulated activity is added.</p>
+      <p><strong>Regulated profession / professional association:</strong> not applicable unless expressly stated here
+        in the future.</p>
+    </section>
+    <section class="section ">
+      <h2>Use of the site and app</h2>
+      <p>Access to and use of these legal pages and the app are subject to the <a href="terms.html">Terms of Use</a> and
+        the <a href="privacy.html">Privacy Policy</a>.</p>
+    </section>
+    <section class="section ">
+      <h2>Intellectual property</h2>
+      <p>The software, design, texts, branding and original content of Skydiving Winds, unless otherwise stated, belong
+        to the operator or are used with permission. Third-party materials remain subject to their respective owners and
+        licences.</p>
+    </section>
+    <section class="section ">
+      <h2>External links and third-party services</h2>
+      <p>These legal pages and the app may contain links to external providers or resources. The operator is not
+        responsible for third-party content, availability or policies beyond what is required by applicable law.</p>
+    </section>
+    <section class="section ">
+      <h2>Applicable law</h2>
+      <p>Unless mandatory consumer law provides otherwise, the service is governed by Spanish law and, where applicable,
+        European Union law.</p>
+    </section>
+    <div class="footer">© 2026 Skydiving Winds · <a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms
+        of Use</a> · <a href="support.html">Support</a> · <a href="delete-account.html">Delete account</a> · <a
+        href="legal-notice.html">Legal Notice</a> · <a href="mailto:legal@skydivewinds.com">legal@skydivewinds.com</a>
+    </div>
   </div>
 </body>
+
 </html>

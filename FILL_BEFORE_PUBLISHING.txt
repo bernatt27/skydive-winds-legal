@@ -1,6 +1,0 @@
-Required before public release:
-
-1. Replace the postal address placeholder in every legal-notice.html with your real service address.
-2. Replace the tax ID placeholder with your NIF/NIE or other tax ID if applicable.
-3. If you prefer not to rely on email for the web deletion path, replace the delete-account page email button with a dedicated form URL.
-4. Review the final wording with a lawyer if you want jurisdiction-specific legal advice.
